@@ -1,4 +1,5 @@
-// Initialize verilog module, stating input and output will be used
+//Initialize verilog module
+//stating input and output will be used
 module decoder_24(
 	input [1:0]w,
 	input EN,

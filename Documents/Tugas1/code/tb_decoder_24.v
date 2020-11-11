@@ -13,7 +13,7 @@ decoder_24 decoder1 (w, EN, out);
 
 //Initialize begin
 initial begin
-	// Create file 'vcd' for running on gtkwave while compiling
+	// Create file 'vcd' for running on gtkwave
 	$dumpfile ("tb.vcd");
 	$dumpvars (0, tb_decoder_24);
        #0 w = 2'b00;  EN=1'b0 ;

@@ -1,11 +1,13 @@
+// Simulating baseline time for simulation control
 `timescale 1ns / 1ns
 
+// Initialize module for test bench
 module tb;
 
-reg [2:0] w;
-wire [7:0] out;
+reg [2:0] w; // input 3 bit
+wire [7:0] out; // output 8 bit
 
-decoder_38 dec(w,out);
+decoder_38 dec(w,out); // instantiate
 initial begin
     $dumpfile ("tb.vcd");
 	$dumpvars (0, tb);
