@@ -1,0 +1,35 @@
+$date
+	Thu Nov  5 08:41:07 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module MyXORTB $end
+$var wire 1 ! x1 $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$scope module xor1 $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! x $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+0!
+$end
+#500
+1!
+1#
+#1000
+0#
+1"
+#1500
+0!
+1#

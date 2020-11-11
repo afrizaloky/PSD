@@ -1,0 +1,3 @@
+Dataflow Modeling => using basic operator (&,|,^,~)
+Behavioral Modeling => Control Flow
+Structural Modeling => Using module instance
