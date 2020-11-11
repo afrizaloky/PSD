@@ -102,6 +102,32 @@
         \caption{Simulasi Decoder 3 to 8}
         \label{decoder24}
         \end{figure}
+    Terdapat perbedaan antara hasil Simulasi dengan perhitungan manual. 
+    \lstinputlisting[firstline=7,lastline=8]{code/decoder_38.v}
+    Jika input $100_2$, menurut potongan kode di atas \\
+    $w_0 = 0, w_1 = 0, w_2 = 1$.
+    Output dari dec0 adalah $0000_2$ karena EN=0.
+    Output dari dec1 adalah $0001_2$ karena EN=1 dengan input = $00_2$.
+    Jika kedua output tersebut digabungkan maka output=$00010000_2=16_{10}$
+
+    Pada perhitungan manual :\\
+    \begin{table}[H]
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c}
+            \hline
+            $Input$  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+            $Output$ & 1 & 2 & 4 & 8 & 16 & 32 & 64 & 128\\ \hline
+        \end{tabular}
+        \caption{perhitungan manual}
+    \end{table}
+    Pada simulasi:
+    \begin{table}[H]
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c}
+            \hline
+            $Input$  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+            $Output$ & 1 & 2 & 4 & 8 & 10 & 20 & 40 & 80\\ \hline
+        \end{tabular}
+        \caption{Hasil simulasi}
+    \end{table}
 \end{enumerate}
 \section{Repository}
 \href{https://github.com/afrizaloky/PSD}{Github Repository}

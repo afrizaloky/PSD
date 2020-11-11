@@ -9,7 +9,7 @@ decoder_38 dec(w,out);
 initial begin
     $dumpfile ("tb.vcd");
 	$dumpvars (0, tb);
-        w= 3'b000;
+    w= 3'b000;
     #10 w= 3'b001;
     #10 w= 3'b010;
     #10 w= 3'b011;
